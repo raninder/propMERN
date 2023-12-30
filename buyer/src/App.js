@@ -1,6 +1,7 @@
 import {BrowserRouter as Router, Route, Routes} from 'react-router-dom'
 import Navbar from './components/Navbar';
-import Images from './components/Images';
+import Header from './components/Header';
+import Hero from './components/Hero';
 
 import './index.css' 
 function App() {
@@ -10,10 +11,9 @@ function App() {
         <Navbar />
         <div className="content">
           <Routes>
-          <Route path="/" element={<Images />} />
-
+          <Route path="/" element={<Header/>} />
           </Routes>
-        
+          <Hero />
         </div>
       </div>
     </Router>
