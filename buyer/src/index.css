@@ -231,3 +231,10 @@ Legend{
   color:grey;
  }
 
+.footer{
+  background-image: url('./images/foot.jpeg');
+  color: white;
+  font-size: 20px;
+  padding:30px;
+  height:300px
+}

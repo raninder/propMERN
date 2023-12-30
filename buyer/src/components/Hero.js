@@ -5,6 +5,7 @@ import Details from "./Details";
 import Sidebar from "./Sidebar";
 import Similar from "./Similar";
 import Map from "./Map";
+import Footer from "./Footer";
 
 const Hero = () => {
 	return ( 
@@ -16,6 +17,7 @@ const Hero = () => {
 			<Details />
 			<Similar />
 			<Map />
+			<Footer />
 			</div>
 			<div className= "right">
 				<Sidebar/>
