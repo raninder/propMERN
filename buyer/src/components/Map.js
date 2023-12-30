@@ -14,7 +14,7 @@ const center = {
 
 const Map = () => {
   const { isLoaded, loadError } = useLoadScript({
-    googleMapsApiKey: 'AIzaSyCAwjHr5c_QTyNCt6ouNsTwYvFQmTm5TVY',
+    googleMapsApiKey: process.env.KEY,
     libraries,
   });
 
