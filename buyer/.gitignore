@@ -22,6 +22,7 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-
+buyer/package.json
+buyer/package-lock.json
 
 google API key-AIzaSyCAwjHr5c_QTyNCt6ouNsTwYvFQmTm5TVY
