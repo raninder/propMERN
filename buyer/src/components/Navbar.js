@@ -1,3 +1,4 @@
+import '../styles/nav.css'
 const Navbar = () => {
 	return ( 
 		<>

@@ -1,7 +1,9 @@
+import '../styles/footer.css'
+
 const Footer = () => {
 	return ( 
 		<div className="footer">
-		Get the App now
+			Get the App now
 		</div>
 	 );
 }

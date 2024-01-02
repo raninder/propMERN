@@ -1,0 +1,44 @@
+/* Overview component */
+
+
+.overview-container>p{
+  display: flex;
+  justify-content: space-between;
+}
+.mls input{
+  background-color:rgb(181, 127, 231);
+  margin-right:10px;
+  border-radius: 5px;
+  padding:6px;
+}
+
+ .icon1{
+  height: 50px;
+}
+hr{
+  width:80%;
+}
+
+.overview-table td {
+  display: inline-block;
+  padding-right: 10px;
+  padding-left: 12px;
+}
+
+.overview-table td.spaced1{
+  margin-left: 50px;
+}
+
+.overview-table td.spaced2{
+  margin-right: 100px;
+}
+
+.align{
+  margin-left: 8px;
+}
+
+@media only screen and (max-width: 600px){
+  table{
+    width:20%;
+  }
+}

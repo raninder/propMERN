@@ -1,0 +1,22 @@
+/* details component */
+.rooms{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin: 20px;
+}
+.rooms1, .rooms2{
+  width:50%;
+}
+
+.top>button{
+    background-color: blueviolet;
+    border: none;
+    color: white;
+    padding: 25px;
+    text-align: center;
+    font-size: 16px;
+    margin: 10px 2px;
+    border-radius: 20px;
+    width: 100%;
+  }

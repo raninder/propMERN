@@ -1,0 +1,42 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: lightgrey;
+}
+.overview-container, .highlights-container, .details-container, .similar{
+  margin-top: 20px;
+  background-color: white;
+  font-family: sans-serif;
+  padding:10px;
+}
+@media only screen and (max-width: 600px){
+  body{
+  width:100%;
+}
+/* .overview-container, .highlights-container, .details-container, .similar{
+  margin-top: 20px;
+  background-color: white;
+  font-family: sans-serif;
+  padding:5px;
+} */
+}
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+

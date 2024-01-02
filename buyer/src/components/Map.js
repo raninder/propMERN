@@ -4,13 +4,19 @@ import { GoogleMap, useLoadScript, Marker } from '@react-google-maps/api';
 const libraries = ['places'];
 
 const mapContainerStyle = {
-  width: '55vw',
+  
+  width: '58vw',
   height: '55vh',
+  // width: '60%',
+  // height: '50%',
  
 };
 const center = {
-  lat: 7.2905715, // default latitude
-  lng: 80.6337262, // default longitude
+  address: '1600 Amphitheatre Parkway, Mountain View, california.',
+  lat: 37.42216,
+  lng: -122.08427,
+  // lat: 7.2905715, // default latitude
+  // lng: 80.6337262, // default longitude
 };
 
 const Map = () => {
@@ -29,15 +35,18 @@ const Map = () => {
   }
 
   return (
+    // <div style={{ height: '450px', width: '450px' }}>
     <div className="google-map">
       <GoogleMap
         mapContainerStyle={mapContainerStyle}
         zoom={10}
         center={center}
       >
-        <Marker position={center} />
+        <Marker position={center} text={center.address}/>
+        
       </GoogleMap>
     </div>
+    // </div>
   );
 };
 

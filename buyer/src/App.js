@@ -6,7 +6,8 @@ import PropertyList from './components/PropertyList';
 import Property from './components/Property';
 import Home from './components/Home';
 
-import './index.css' 
+import './styles/index.css' 
+
 function App() {
   return (
     <>

@@ -1,0 +1,28 @@
+/* price component */
+iframe{
+  height: 100px;
+  width:100%;
+}
+.desc-container{
+  display: flex;
+  justify-content: space-evenly;
+  background-color: white;
+}
+.price-container{
+  width:60%;
+  margin:10px;
+}
+.map{
+  width:40%;
+}
+.price-container>.price{
+  font-size: 18px;
+  color:blueviolet;
+}
+.price-container>.price-icons, .price-container>.icon{
+  font-family:Arial, Helvetica, sans-serif;
+  padding-top: 10px;
+}
+.price-container span{
+  margin-right: 10px;
+}

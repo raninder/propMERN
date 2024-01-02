@@ -1,53 +1,75 @@
 
 import React from 'react';
-// import { PieChart, Pie } from 'recharts';
 import 'chartjs-plugin-datalabels';
-import { PieChart, Pie, Legend, Cell } from 'recharts';
+import { PieChart, Pie, Legend, Cell,Label,ResponsiveContainer } from 'recharts';
+import '../styles/chart.css'
 
 const Chart = () => {
 	const data = [
-		{ name: 'Mortgage', amount: 630 },
-		{ name: 'Co-owner', amount: 303 },
-		{ name: 'Municipal Taxes', amount: 200 },
-		{ name: 'School Taxes', amount: 303 }
-];
+		{ name: 'Mortgage', amount: 630, color:'blueviolet' },
+		{ name: 'Co-owner', amount: 303, color:'green' },
+		{ name: 'Municipal Taxes', amount: 200, color:'black' },
+		{ name: 'School Taxes', amount: 303,color:'brown' }
+	];
 
 const COLORS = ['blueviolet', 'green', 'black', 'brown'];
 
 	return ( 
 		<div className="piechart">
 			<div className="chart">
-		<PieChart width={300} height={300}>
-	
-		<Legend layout="vertical" verticalAlign="bottom"/>
-		<Pie
+			{/* <ResponsiveContainer width="100%" height={220}> */}
+				<PieChart width={200} height={300}>
+		
+					<Legend 
+					layout="vertical" 
+					verticalAlign="top"
+					payload={
+						data.map(
+							(item,index) => ({
+								id: item.name,
+								// color:item.fill.COLORS[index],
+								// fill:"fill",
+								color:item.color,
+								// type: "circle",
+								value: `${item.name}  ${item.amount}` ,
+							})
+						)
+					}
 					
-          data={data} 
-          cx={80} 
-          cy={80} 
-          innerRadius={40}
-          outerRadius={60} 
-          fill="#8884d8"
-          // paddingAngle={1}
-					dataKey="amount"
-        >
-        	{
-          	data.map((entry, index) => <Cell fill={COLORS[index % COLORS.length]}/>)
-          }
-        </Pie>
-			
-</PieChart>
-</div>
-<div className="chartvalue">
-<h1> $1533</h1>
-<h6>/monthly</h6>
-</div>
+					/>
+					{/* <Legend 
+					layout="vertical" 
+					verticalAlign="bottom"
+					 payload={data} /> */}
+					<Pie
+							data={data} 
+							cx={80} 
+							cy={80} 
+							innerRadius={40}
+							outerRadius={60} 
+							// fill="#8884d8"
+							// paddingAngle={1}
+							dataKey="amount"
+					>
+					{
+						data.map((entry, index) => <Cell fill={entry.color}/>)
+						// data.map((entry, index) => <Cell fill={COLORS[index % COLORS.length]}/>)
+					}
+					{/* <Label width={30} >
+                  { "$1533 monthly" }
+                </Label> */}
+						</Pie>
+				
+				</PieChart>
+				{/* </ResponsiveContainer> */}
+			</div>
+			<div className="chartvalue">
+				<h1> $1533</h1>
+				<h6>/monthly</h6>
+			</div>
 
-</div>
-	 );
-
+		</div>
+	);
 }
 
-
- 
 export default Chart;
