@@ -22,7 +22,7 @@ const COLORS = ['blueviolet', 'green', 'black', 'brown'];
 		
 					<Legend 
 					layout="vertical" 
-					verticalAlign="top"
+					verticalAlign="bottom"
 					payload={
 						data.map(
 							(item,index) => ({
