@@ -4,17 +4,17 @@
 import {dataprop1} from './Data'
 
 import Hero from './Hero';
-const Header = () => {
+const Header = ({data}) => {
 	return ( 
 		<>
       <div className='content grid5 mtop'>
         
           <div className='box' >
-            <img className="img1" src={dataprop1.pic1} alt='' />
-						<img className="img2" src={dataprop1.pic2} alt='' />
-						<img className="img3" src={dataprop1.pic3} alt='' />
+            <img className="img1" src={data.cover} alt='' />
+						<img className="img2" src={data.img2} alt='' />
+						<img className="img3" src={data.img3} alt='' />
           </div>
-     <Hero />
+     {/* <Hero /> */}
      
 		 
       </div>

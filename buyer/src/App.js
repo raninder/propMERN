@@ -4,6 +4,7 @@ import Header from './components/Header';
 import Hero from './components/Hero';
 import PropertyList from './components/PropertyList';
 import Property from './components/Property';
+import Home from './components/Home';
 
 import './index.css' 
 function App() {
@@ -14,8 +15,10 @@ function App() {
         <Navbar />
         <div className="content">
           <Routes>
-          <Route path="/" element={<PropertyList/>} />
+          {/* <Route path="/" element={<PropertyList/>} /> */}
+          <Route path="/" element={<Home/>} />
           <Route path="/propdetails" element={<Header/>} />
+          <Route path="/properties/:id" element={<Property/>} />
           </Routes>
         </div>
       </div>

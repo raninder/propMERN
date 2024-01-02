@@ -53,7 +53,7 @@ export const datalist = [
   }
 ];
 
-export const dataprop1 = 
+export const dataprop1 = [
 		{id: 1,
     pic1: pic1,
 		pic2: pic2,
@@ -65,5 +65,30 @@ export const dataprop1 =
 		bedroom:3,
 		washroom:1,
 		area: '1186 sq ft'
-	};
+	},
+  {id: 2,
+    pic1: pic1,
+		pic2: pic2,
+		pic3: pic3,
+		location: "123 ABC Edmonton",
+    category: "For Sale",
+    price: "$410,000",
+    type: "Homes & Villas",
+		bedroom:3,
+		washroom:1,
+		area: '1100 sq ft'
+	},
+  {id: 3,
+    pic1: pic1,
+		pic2: pic2,
+		pic3: pic3,
+		location: "500 Native Landing",
+    category: "For Sale",
+    price: "$640,000",
+    type: "Homes & Villas",
+		bedroom:3,
+		washroom:1,
+		area: '1000 sq ft'
+	}
+];
 

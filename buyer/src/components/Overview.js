@@ -1,7 +1,7 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPersonWalking} from "@fortawesome/free-solid-svg-icons";
 
-const Overview = () => {
+const Overview = ({data}) => {
 	return (
 		<div className="overview-container">
 			<p>
@@ -34,13 +34,13 @@ const Overview = () => {
 			</tr>
 			<tr>
 			<td className="spaced1 "></td>
-				<td>70/100</td>
+				<td>{data.walkScore}</td>
 				
 				<td className="spaced1 spaced2"></td>
-				<td>83/100</td>
+				<td>{data.bikeScore}</td>
 			
 				<td className="spaced1 spaced2"></td>
-				<td>88/100</td>
+				<td>{data.busScore}</td>
 			</tr>
 		</table>
 		
