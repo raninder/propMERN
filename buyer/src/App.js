@@ -18,7 +18,7 @@ function App() {
           <Routes>
           {/* <Route path="/" element={<PropertyList/>} /> */}
           <Route path="/" element={<Home/>} />
-          <Route path="/propdetails" element={<Header/>} />
+          {/* <Route path="/propdetails" element={<Header/>} /> */}
           <Route path="/properties/:id" element={<Property/>} />
           </Routes>
         </div>

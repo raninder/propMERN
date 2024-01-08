@@ -1,15 +1,12 @@
 import {useState,useEffect} from 'react';
 
-// const useFetch = () => {
 const useFetch = (url) => {
-	// const [blogs,setBlogs] = useState(null)  // this state is changed to data below
 	const [data, setData] = useState(null)
 	const [isPending, setIsPending] = useState(true)
 	const [error,setError] = useState(null)
 
 	useEffect(() => {
 		setTimeout(()=>{
-			// fetch('http://localhost:8000/properties')
 			fetch(url)
 				.then (res=> {
 					if(!res.ok)
@@ -19,7 +16,6 @@ const useFetch = (url) => {
 				.then((data)=>{
 					console.log("data",data)
 					setError(null)
-					// setBlogs(data) state changed to data
 					setData(data)
 					setIsPending(false)
 				})
@@ -28,10 +24,10 @@ const useFetch = (url) => {
 					setError(err.message)
 				})
 		}, 2000)}
-	// ,[]) //changed after hardcoded url is removed
+
 	,[url])
 	return {data,isPending,error}
-	// return{ data,error}
+
 }
 
 export default useFetch

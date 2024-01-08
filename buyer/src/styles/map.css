@@ -1,5 +1,18 @@
-@media only screen and (max-width: 600px){
+/* .google-map {
+  height: 400px;
+  width: 300px;
+} */
+
+.map-container {
+  /* height: 100%;
+  width: 100%; */
+	height: '55vh';
+  width: '58vw';
+}
+
+/* @media only screen and (max-width: 600px){
 	.google-map{
 		width:100%;
 	}
-}
+} */
+

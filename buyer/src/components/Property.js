@@ -8,7 +8,9 @@ import Similar from "./Similar";
 import Highlights from "./Highlights";
 import Sidebar from "./Sidebar";
 import Details from "./Details";
+
 import Map from "./Map";
+
 import Footer from "./Footer";
 import '../styles/property.css'
 

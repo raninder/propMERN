@@ -7,8 +7,6 @@ const Highlights = () => {
 		<div className="highlights-container">
 			<h3> Home Highlights</h3>
 			<table className="highlights-table">
-				
-			
 				<tr>
 					<td className="align-left"><FontAwesomeIcon icon={faSquareParking} /><span className="align">Parking</span></td>
 					<td className="align-right">4 Parking Spaces</td>
