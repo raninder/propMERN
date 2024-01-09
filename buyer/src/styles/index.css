@@ -26,7 +26,12 @@ body {
 }
 
 
- 
+.chart-container {
+  margin-bottom: 5rem;
+  width: 30%;
+  height:30%;
+}
+
 
 
 

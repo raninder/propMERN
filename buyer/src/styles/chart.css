@@ -5,22 +5,25 @@
 }
 .chart{
   width:40%;
-  text-align:right;
+  /* text-align:right; */
 }
 .chartvalue{
   width:60%;
   padding-top: 40px;
   text-align: left;
 }
+/* .legend{
+  text-align:left;
+} */
 
 .top>h3, .chartvalue>h6{
   color:grey;
 }
 
-Legend{
+/* Legend{
   color: black;
   
-}
+} */
 
 @media only screen and (max-width: 600px){
   .piechart{
@@ -28,11 +31,12 @@ Legend{
     flex-direction: column;
   }
   Legend{
-    text-align:left;
+    /* text-align:left; */
+    /* width:80%; */
   }
   .chart{
     width:50%;
-    height: 200px;
+    height: 300px;
   
     /* text-align:right; */
   }
@@ -46,6 +50,19 @@ Legend{
     left:50;
   }
 } 
+.legend{
+  padding:20px;
+  /* margin:50px; */
+}
+.chart-table{
+  border-collapse: separate;
+  border-spacing: 20px;
+ 
+}
+.chart-table td{
+  padding-right:40px;
+  white-space: nowrap;
+}
 @media only screen and (min-width: 600px){
   .chartvalue{
     padding-left:30px;

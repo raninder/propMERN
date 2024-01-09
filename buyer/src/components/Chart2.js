@@ -13,37 +13,53 @@ const Chart = () => {
 	];
 
 const COLORS = ['blueviolet', 'green', 'black', 'brown'];
+// const renderLegend = (props) => {
+//   const { payload } = props;
+// console.log("payload",payload);
+//   return (
+//     // <div style={{display: 'grid', gridTemplateColumns: 'max-content max-content', gap: '1em'}}>
+//     <div className="legend">  
+// 			<table className="chart-table">
+// 		{		
+				
+//         payload.map((entry, index) => (
+//          <tr>
+// 					 <td>{entry.name}</td>
+// 					 <td>{entry.amount}</td>
+// 					</tr>
+//         ))
+//       }
+// 			</table>
+//     </div>
+//   );
+// }
 
 	return ( 
 		<div className="piechart">
 			<div className="chart">
 			{/* <ResponsiveContainer width="100%" height={220}> */}
 				<PieChart width={200} height={300}>
+		
+					<Legend 
+					layout="vertical" 
+					verticalAlign="bottom"
+					// payload={data}
 					
-						<Legend 
-						// wrapperStyle={{ left: 25, paddingLeft: "10px"}}
-							layout="vertical" 
-							verticalAlign="bottom"
-					
-							payload={
-									data.map((item,index) => ({
-										id: item.name,
-										// color:item.fill.COLORS[index],
-										// fill:"fill",
+					// useHTML= 'true'
+					payload={
+						data.map(
+							(item,index) => ({
 								
-										color:item.color,
-										// type: "circle",
-										value: `${item.name} ${item.amount}`
+								id: item.name,
+								color:item.color,
+								value: `${item.name} ${item.amount}` ,
+	
 							})
 						)
 					}
-					
+				
 					/>
 				
-					{/* <Legend 
-					layout="vertical" 
-					verticalAlign="bottom"
-					 payload={data} /> */}
 					<Pie
 							data={data} 
 							cx={80} 
@@ -58,12 +74,12 @@ const COLORS = ['blueviolet', 'green', 'black', 'brown'];
 						data.map((entry, index) => <Cell fill={entry.color}/>)
 						// data.map((entry, index) => <Cell fill={COLORS[index % COLORS.length]}/>)
 					}
+			
+						</Pie>
 				
-					</Pie>
-				
-					</PieChart>
-				
-				</div>
+				</PieChart>
+			
+			</div>
 			<div className="chartvalue">
 				<h1> $1533</h1>
 				<h6>/monthly</h6>

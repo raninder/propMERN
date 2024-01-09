@@ -7,8 +7,6 @@ const mapContainerStyle = {
   
   width: '58vw',
   height: '55vh',
-//   // width: '60%',
-//   // height: '50%',
  
 };
 // const center = {
