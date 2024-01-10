@@ -6,20 +6,15 @@ const RangeSlider = ({ min, max,step,cValue }) => {
   
   const handleChange = e => {
     e.preventDefault();
-    const value = parseFloat(e.target.value);
-    // the new max value is the value from the event.
-    // it must not be less than the current min value!
-    const newMaxVal = Math.max(value, min + step);
-		setValue(newMaxVal);
-    // setMaxValue(newMaxVal);
+    const nvalue = parseFloat(e.target.value);
+		setValue(nvalue);
   };
-	console.log("vale2",value);
 	
   return (
-    <div className="slider1">
+    <div className="slider-container">
 				<p> Full Market Value $<span>{value}</span></p>
       <input
-			className="slider"
+				className="slider"
         type="range"
         value={value}
         min={min}
