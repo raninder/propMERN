@@ -18,10 +18,10 @@ const COLORS = ['blueviolet', 'green', 'black', 'brown'];
 		<div className="piechart">
 			<div className="chart">
 			{/* <ResponsiveContainer width="100%" height={220}> */}
-				<PieChart width={200} height={300}>
+				<PieChart width={250} height={300}>
 					
 						<Legend 
-						// wrapperStyle={{ left: 25, paddingLeft: "10px"}}
+						// wrapperStyle={{ color:'black'}}
 							layout="vertical" 
 							verticalAlign="bottom"
 					
