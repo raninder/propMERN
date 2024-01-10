@@ -12,28 +12,19 @@
   padding-top: 40px;
   text-align: left;
 }
-/* .legend{
-  text-align:left;
-} */
+
 
 .top>h3, .chartvalue>h6{
   color:grey;
 }
 
-/* Legend{
-  color: black;
-  
-} */
 
 @media only screen and (max-width: 600px){
   .piechart{
     display:flex;
     flex-direction: column;
   }
-  Legend{
-    /* text-align:left; */
-    /* width:80%; */
-  }
+  
   .chart{
     width:50%;
     height: 300px;
