@@ -16,12 +16,15 @@
 		border: none;
 		color:blueviolet;
 	}
-
-	.range{
+	.range-container{
+		margin-top:10px;
+		background-color: white;
 		display: flex;
-		/* justify-content: space-between; */
+		flex-direction: column;
+	}
+	.slider-container{
 		margin:10px;
 		font-size: 20px;
-		flex-direction: column;
 		width: 70%;
 	}
+	

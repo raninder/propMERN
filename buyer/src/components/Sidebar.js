@@ -1,5 +1,5 @@
 import Chart from "./Chart";
-import RangeSlider from "./RangeSlider";
+import Bars from "./Bars";
 import '../styles/sidebar.css'
 
 const Sidebar = () => {
@@ -17,10 +17,9 @@ const Sidebar = () => {
 				</div>
 				<Chart />
 			</div>
-			<div className="range">
+			<div className="range-container">
 			
-				<RangeSlider min={1000}  max={500000} step={1000} cValue={109000}/>
-			
+				<Bars />
 			</div>
 		</div>
 	);
