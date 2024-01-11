@@ -1,14 +1,19 @@
-import { useState } from "react";
-const Range = ({ title,min, max,step,value,handleChange }) => {
+import '../styles/range.css'
+const Range = ({ title,min, max,step,value1,value2,handleChange }) => {
   
-	console.log("value", value);
+	console.log("value", value1);
   return (
     <div className="slider-container">
-				<p> {title}<span>{value}</span></p>
+			<div className="heading">
+				<span className="title"> {title}</span>
+				{value2? <div><span className="value">{value2}</span><span className="value">{value1}</span></div>
+				:
+				<span className="value">{value1}</span>
+				}
+				</div>
       <input
-				className="slider"
         type="range"
-        value={value}
+        value={value1}
         min={min}
         max={max}
         step={step}

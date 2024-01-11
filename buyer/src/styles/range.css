@@ -1,0 +1,25 @@
+
+.range{
+	margin: 20px;
+	font-size: 18px;
+	font-family:sans-serif;
+
+}
+.slider-container{
+	
+	display:flex;
+	flex-direction: column;
+}
+.slider-container .value{
+	border: 1px solid lightgrey;
+	margin:4px;
+
+}
+.heading{
+	display:flex;
+	justify-content:space-between;
+}
+input[type="range"] {
+  accent-color:blueviolet;
+	margin:10px;
+}

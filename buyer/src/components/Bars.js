@@ -1,10 +1,10 @@
 import { useState } from 'react';
-// import reusable slider component
 import Range from './Range'
+import '../styles/range.css' 
 
 function Bars() {
   const [marketValue,setMarketValue] = useState(10900)
-	const [percentValue, setPercentValue] = useState(5.45)
+	const [percentValue, setPercentValue] = useState(45)
  
   const handleMarketChange = e => {
     e.preventDefault();
@@ -21,22 +21,24 @@ function Bars() {
 
 
   return (
-		<div>
+		<div className="range">
     
      <Range
 		 		min={1000} 
 		 	 	max={500000} 
 				step={1000}
        	handleChange={handleMarketChange}
-       	value={marketValue} 
+       	value1={marketValue} 
+				// value2={""}
 				title= {"Full Market Value" }
 			/>
 			<Range
 		 		min={1} 
-		 	 	max={10} 
-				step={.1}
+		 	 	max={100} 
+				step={10}
        	handleChange={handlePercentChange}
-       	value={percentValue} 
+       	value1={percentValue} 
+				value2={marketValue}
 				title= {"Share percentages" }
 			/>
 			</div>

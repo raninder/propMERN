@@ -18,7 +18,6 @@ const Sidebar = () => {
 				<Chart />
 			</div>
 			<div className="range-container">
-			
 				<Bars />
 			</div>
 		</div>
