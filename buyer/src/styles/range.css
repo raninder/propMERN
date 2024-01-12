@@ -6,7 +6,6 @@
 
 }
 .slider-container{
-	
 	display:flex;
 	flex-direction: column;
 }
@@ -21,5 +20,15 @@
 }
 input[type="range"] {
   accent-color:blueviolet;
-	margin:10px;
+	margin:15px 0px;
+}
+button{
+	border: none;
+	background:white;
+	margin-left:10px;
+	font-size: medium;
+}
+button:hover{
+	color:blueviolet;
+	font-weight: bold;
 }

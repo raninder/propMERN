@@ -1,5 +1,5 @@
 import '../styles/range.css'
-const Range = ({ title,min, max,step,value1,value2,handleChange }) => {
+const Range = ({ title,min, max,step,value1,value2,value3,handleChange }) => {
   
 	console.log("value", value1);
   return (
@@ -8,8 +8,12 @@ const Range = ({ title,min, max,step,value1,value2,handleChange }) => {
 				<span className="title"> {title}</span>
 				{value2? <div><span className="value">{value2}</span><span className="value">{value1}</span></div>
 				:
+				value3?
+				<span className="value">{value3} years</span>
+				:
 				<span className="value">{value1}</span>
 				}
+				{/* {value3 && <span className="value">{value3} years</span>} */}
 				</div>
       <input
         type="range"

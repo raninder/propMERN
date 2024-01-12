@@ -6,8 +6,10 @@
 	}
 	.payment{
 		background-color: white;
+		display: flex;
+		flex-direction: column;
 	}
-	.payment .head{
+	.payment>.head{
 		display: flex;
 		justify-content: space-between;
 		margin:10px;
