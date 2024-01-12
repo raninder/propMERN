@@ -21,7 +21,7 @@ const COLORS = ['blueviolet', 'green', 'black', 'brown'];
 				<PieChart width={250} height={300}>
 					
 						<Legend 
-						// wrapperStyle={{ color:'black'}}
+						wrapperStyle={{ marginBottom:'20px'}}
 							layout="vertical" 
 							verticalAlign="bottom"
 					
