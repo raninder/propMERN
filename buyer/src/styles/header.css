@@ -1,6 +1,7 @@
 /* Header component */
 .box{
   margin-left:30px;
+  display:flex;
 }
 .box img{
   /* height: 500px; */
@@ -14,7 +15,24 @@
   margin-right: 10px;
 }
 .img3{
+  width:100%;
+  border:1px solid green;
+}
+.img-container{
+  position:relative;
   width:26%;
+}
+.img-button{
+  position: absolute;
+  bottom: 10%;
+  left: 30%;
+  color: white;
+  font-size: 14px;
+  padding: 10px;
+  border-radius: 15px;
+  border: none;
+  background-color: white;
+  color:black;
 }
 
 /* phones */
@@ -57,7 +75,7 @@
     margin-right: 10px;
   }
   .img3{
-    width:26%;
+    /* width:26%; */
   }
 }
 
