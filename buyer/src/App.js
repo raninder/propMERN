@@ -2,6 +2,7 @@ import {BrowserRouter as Router, Route, Routes} from 'react-router-dom'
 import Navbar from './components/Navbar';
 import Property from './components/Property';
 import Home from './components/Home';
+import CarouselComp from './components/CarouselComp';
 
 import './styles/index.css' 
 
@@ -17,6 +18,7 @@ function App() {
           <Route path="/" element={<Home/>} />
           {/* <Route path="/propdetails" element={<Header/>} /> */}
           <Route path="/properties/:id" element={<Property/>} />
+          <Route path="/images" element={<CarouselComp/>} />
           </Routes>
         </div>
       </div>
