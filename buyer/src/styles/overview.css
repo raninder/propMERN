@@ -34,30 +34,7 @@ hr{
   justify-content: space-between;
 }
 
-/* .icon{
-  margin:20px;
-} */
-
-.overview-table td {
-  display: inline-block;
-  padding-right: 10px;
-  padding-left: 12px;
-}
-
-.overview-table td.spaced1{
-  margin-left: 50px;
-}
-
-.overview-table td.spaced2{
-  margin-right: 100px;
-}
-
-.align{
-  margin-left: 8px;
-}
 
 @media only screen and (max-width: 600px){
-  table{
-    width:20%;
-  }
+  
 }
