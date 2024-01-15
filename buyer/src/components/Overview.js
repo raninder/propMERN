@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faPersonWalking} from "@fortawesome/free-solid-svg-icons";
+import { faPersonWalking, faBicycle, faBus} from "@fortawesome/free-solid-svg-icons";
 import '../styles/overview.css'
 
 const Overview = ({data}) => {
@@ -20,28 +20,37 @@ const Overview = ({data}) => {
 			<hr/>
 			<br/>
 			<h3>Getting Around</h3>
-			<table className="overview-table">
-				<tr>
-					<td rowspan="2" ><FontAwesomeIcon icon={faPersonWalking} size="3x"/></td>
-					<td className="spaced2">Walk Score</td>
-				
-					<td rowspan="2" ><FontAwesomeIcon icon={faPersonWalking} size="3x"/></td>
-					<td className="spaced2">Bike Score</td>
-				
-					<td rowspan="2" ><FontAwesomeIcon icon={faPersonWalking} size="3x"/></td>
-					<td>Bus Score</td>
-				</tr>
-				<tr>
-					<td className="spaced1 "></td>
-					<td>{data.walkScore}</td>
-					
-					<td className="spaced1 spaced2"></td>
-					<td>{data.bikeScore}</td>
-				
-					<td className="spaced1 spaced2"></td>
-					<td>{data.busScore}</td>
-				</tr>
-			</table>
+			<div className="score">
+				<div className="walk">
+					<div className="icon">
+						<FontAwesomeIcon icon={faPersonWalking} size="3x"/>
+					</div>
+					<div className="walkscore">
+						<div>Walk Score</div>
+						<div>70/100</div>
+					</div>	
+				</div>
+			
+				<div className="walk">
+					<div className="icon">
+						<FontAwesomeIcon icon={faBicycle} size="3x"/>
+					</div>
+					<div className="walkscore">
+						<div>Bike Score</div>
+						<div>83/100</div>
+					</div>	
+				</div>
+			
+				<div className="walk">
+					<div className="icon">
+						<FontAwesomeIcon icon={faBus} size="3x"/>
+					</div>
+					<div className="walkscore">
+						<div>Bus Score</div>
+						<div>88/100</div>
+					</div>
+				</div>
+			</div>	
 		
 		</div>
 	);

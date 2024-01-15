@@ -16,8 +16,27 @@
   height: 50px;
 }
 hr{
-  width:80%;
+  width:100%;
 }
+.score{
+  display:flex;
+}
+
+.walk{
+  display: flex;
+  margin: 30px;
+}
+
+.walkscore{
+  display: flex;
+  flex-direction: column;
+  margin-left:20px;
+  justify-content: space-between;
+}
+
+/* .icon{
+  margin:20px;
+} */
 
 .overview-table td {
   display: inline-block;
