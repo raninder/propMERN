@@ -1,24 +1,24 @@
-/* Highlights component */
-.highlights-table,.highlights-table td{
-  padding-right: 30px;
+.highlights-content{
+  display: flex;
+  flex-direction: row;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 14px;
+  margin-top:10px;
 }
-.highlights-table td{
-  width: 20%;
-}
-.align-left{
-  text-align:left;
-}
-.align-right{
-  font-weight: bold;
-  text-align:right;
+.key{
+  margin: 5px;
 }
 
-@media only screen and (max-width: 600px){
-  .highlights-table,.highlights-table td{
-    padding-right: 5px;
-    padding-bottom:5px;
-  }
+.column2, .column4{
+  text-align: right;
+  font-weight: bold;
 }
-.highlights-container{
-  margin:5px;
+.column2{
+  margin-right:60px;
+}
+.key-icon{
+  margin:12px;
+}
+.column4{
+  padding-left:40px;
 }
