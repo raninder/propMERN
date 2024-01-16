@@ -1,5 +1,5 @@
 import Chart from "./Chart";
-import Bars from "./Bars";
+import RangeBars from "./RangeBars";
 import '../styles/sidebar.css'
 
 const Sidebar = () => {
@@ -18,7 +18,7 @@ const Sidebar = () => {
 				<Chart />
 			</div>
 			<div className="range-container">
-				<Bars />
+				<RangeBars />
 			</div>
 		</div>
 	);
