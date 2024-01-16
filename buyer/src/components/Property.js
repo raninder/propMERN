@@ -9,8 +9,6 @@ import Highlights from "./Highlights";
 import Sidebar from "./Sidebar";
 import Details from "./Details";
 import Map from "./Map";
-
-import Footer from "./Footer";
 import '../styles/property.css'
 
 // const Property = ({ id, cover,price,location }) => {
@@ -33,7 +31,6 @@ import '../styles/property.css'
           <Details />
           <Similar />
           <Map />
-          <Footer />
         </div>
         <div className= "right">
           <Sidebar/>
