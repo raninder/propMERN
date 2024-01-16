@@ -1,7 +1,7 @@
 /* Overview component */
 
 
-.overview-container>p{
+.overview-heading{
   display: flex;
   justify-content: space-between;
 }

@@ -22,13 +22,14 @@ input[type="range"] {
   accent-color:blueviolet;
 	margin:15px 0px;
 }
-button{
+.heading button{
 	border: none;
 	background:white;
+	color:grey;
 	margin-left:10px;
 	font-size: medium;
 }
-button:hover{
+.heading button:hover{
 	color:blueviolet;
 	font-weight: bold;
 }

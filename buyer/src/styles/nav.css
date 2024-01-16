@@ -9,10 +9,17 @@
   align-items: center;
   background-color: blueviolet;
 }
-.logo img{
+.navlogo img{
   width: 300px;
 }
-
+.search-form{
+  position:relative;
+}
+.search-icon{
+  position:absolute;
+  left:230px;
+  top:10px;
+}
 input.search {
   width: 260px;
   border: 1px solid;
