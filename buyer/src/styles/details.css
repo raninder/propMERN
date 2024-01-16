@@ -4,9 +4,11 @@
   flex-direction: row;
   justify-content: space-evenly;
   position:relative;
+  /* margin:10px; */
 }
 .rooms1, .rooms2{
   width:50%;
+  margin-bottom:20px;
 }
 
 .top>button{
@@ -25,16 +27,26 @@
   }
 
   .align{
-    margin:10px;
+    margin-left:10px;
   }
-  p{
+  .rooms p{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 11px;
     margin:5px;
   }
-  .bdiv{
+  .bdiv1{
     display:inline-block;
     width:130px;
+    height:200px;
     position:absolute;
-    top:20px;
+    top:20px; 
+  }
+
+  .bdiv{
+    display:inline-block;
+    width:170px;
+    height:220px;
+    position:absolute;
+    top:40px; 
+   
   }

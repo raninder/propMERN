@@ -16,7 +16,7 @@ const DetailsProperty = () => {
           aria-controls="panel1a-content"
           id="panel1a-header"
         >
-          <Typography>Property</Typography>
+          <Typography><h4>Property</h4></Typography>
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
@@ -25,9 +25,9 @@ const DetailsProperty = () => {
 				<div className="rooms1">
 					<h5> Parking</h5>
 					<p><FontAwesomeIcon icon={faCircle} /><span className="align">Total Sapces: </span><b> 4</b></p>
-					<p><FontAwesomeIcon icon={faCircle} /><span className="align">Features:</span><b className="bdiv">1 Garage attcahed, Inside Entrance, Oversized</b></p>
-					<p><FontAwesomeIcon icon={faCircle} /><span className="align">Garage Spaces:</span><b>  1</b></p>
-					<p><FontAwesomeIcon icon={faCircle} /><span className="align">Covered Spaces:</span><b>1</b></p>
+					<p><FontAwesomeIcon icon={faCircle} /><span className="align">Features: </span><b className="bdiv2">1 Garage attached, Inside Entrance, Oversized</b></p>
+					<p><FontAwesomeIcon icon={faCircle} /><span className="align">Garage Spaces: </span><b>  1</b></p>
+					<p><FontAwesomeIcon icon={faCircle} /><span className="align">Covered Spaces: </span><b>1</b></p>
 				</div>
 				<div className="rooms2">
 					<h5> Lot</h5>
@@ -39,12 +39,12 @@ const DetailsProperty = () => {
 			<div className="rooms">
 				<div className="rooms1">
 					<h5> Property</h5>
-					<p><FontAwesomeIcon icon={faCircle} /><span className="align">Levels:</span><b>2</b></p>
+					<p><FontAwesomeIcon icon={faCircle} /><span className="align">Levels: </span><b>2</b></p>
 					<p><FontAwesomeIcon icon={faCircle} /><span className="align">Frontage Length: </span><b> 39.83</b></p>
 				</div>
 				<div className="rooms2">
 					<h5> Other Information</h5>
-					<p><FontAwesomeIcon icon={faCircle} /><span className="align">Additional Structures Included:</span><b>Storage Shed</b></p>
+					<p><FontAwesomeIcon icon={faCircle} /><span className="align">Additional Structures Included: </span><b>Storage Shed</b></p>
 					<p><FontAwesomeIcon icon={faCircle} /><span className="align">Parcel number: </span><b> 041590009</b></p>
 					<p><FontAwesomeIcon icon={faCircle} /><span className="align">Zoning Descripton: </span><b>Residential</b></p>
 				</div>

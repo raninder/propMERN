@@ -88,7 +88,7 @@ function RangeBars() {
 			/>
 			<div className="heading">
 				<span className="title"> Frequency</span>
-				<span><button>Monthly</button><button>Bi weekly</button></span> 
+				<span><button className="freq">Monthly</button><button>Bi weekly</button></span> 
 			</div>
 			</div>
   );

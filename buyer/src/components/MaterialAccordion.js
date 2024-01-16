@@ -13,7 +13,7 @@ function MaterialAccordion() {
           aria-controls="panel1a-content"
           id="panel1a-header"
         >
-          <Typography>Construction</Typography>
+          <Typography><h4>Construction</h4></Typography>
         </AccordionSummary>
         <AccordionDetails>
           <Typography>Text goes here ...</Typography>
@@ -26,7 +26,7 @@ function MaterialAccordion() {
           aria-controls="panel2a-content"
           id="panel2a-header"
         >
-          <Typography>Utilities & Green  Energy</Typography>
+          <Typography><h4>Utilities & Green  Energy</h4></Typography>
         </AccordionSummary>
         <AccordionDetails>
           <Typography>Text goes here ...</Typography>
@@ -39,7 +39,7 @@ function MaterialAccordion() {
           aria-controls="panel2a-content"
           id="panel2a-header"
         >
-          <Typography>Community & Neighborhood</Typography>
+          <Typography><h4>Community & Neighborhood</h4></Typography>
         </AccordionSummary>
         <AccordionDetails>
           <Typography>Text goes here ...</Typography>
@@ -52,7 +52,7 @@ function MaterialAccordion() {
           aria-controls="panel2a-content"
           id="panel2a-header"
         >
-          <Typography>Days on Market</Typography>
+          <Typography><h4>Days on Market</h4></Typography>
         </AccordionSummary>
         <AccordionDetails>
           <Typography>Text goes here ...</Typography>
@@ -65,7 +65,7 @@ function MaterialAccordion() {
           aria-controls="panel2a-content"
           id="panel2a-header"
         >
-          <Typography>Property Information</Typography>
+          <Typography><h4>Property Information</h4></Typography>
         </AccordionSummary>
         <AccordionDetails>
           <Typography>Text goes here ...</Typography>
@@ -78,7 +78,7 @@ function MaterialAccordion() {
           aria-controls="panel2a-content"
           id="panel2a-header"
         >
-          <Typography>Price & Status</Typography>
+          <Typography><h4>Price & Status</h4></Typography>
         </AccordionSummary>
         <AccordionDetails>
           <Typography>Text goes here ...</Typography>

@@ -6,16 +6,17 @@
   color: white;
   font-size: 12px;
   padding:30px;
+  display:flex;
   /* height:300px */
 }
 .mobile{
   display:flex;
   justify-content: space-between;
 }
-p{
+.content>p{
   margin:20px;
 }
-button{
+.content>button{
   background:transparent;
   border:1px solid white;
   color:white;
@@ -44,7 +45,6 @@ button{
   display:flex;
 }
 
-.footer{display:flex;}
 .mobile{
   background:transparent;
   height:300px;
