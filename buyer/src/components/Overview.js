@@ -5,14 +5,15 @@ import '../styles/overview.css'
 const Overview = ({data}) => {
 	return (
 		<div className="overview-container">
-			<p>
+			<div className="overview-heading">
 				<h3>Overview</h3>
+				
 				<div className="mls">
 					<input type="text" value="MLS#A1165993" readOnly></input>
 					<input type="text" value="Brokerage BHHS EWM Realty" readOnly></input>
 				</div>
-			</p>
-			<br/>
+			</div>
+		
 			<p>
 				Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit fuga inventore, deserunt modi mollitia quo vero nulla, distinctio sunt error esse rerum quia incidunt eligendi dolores obcaecati sed optio ducimus.
 			</p>
