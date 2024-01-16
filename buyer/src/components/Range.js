@@ -13,7 +13,6 @@ const Range = ({ title,min, max,step,value1,value2,value3,handleChange }) => {
 				:
 				<span className="value">{value1}</span>
 				}
-				{/* {value3 && <span className="value">{value3} years</span>} */}
 				</div>
       <input
         type="range"
