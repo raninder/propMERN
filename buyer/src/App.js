@@ -3,6 +3,7 @@ import Navbar from './components/Navbar';
 import Property from './components/Property';
 import Home from './components/Home';
 import CarouselComp from './components/CarouselComp';
+import Footer from './components/Footer';
 
 import './styles/index.css' 
 
@@ -21,6 +22,7 @@ function App() {
           <Route path="/images" element={<CarouselComp/>} />
           </Routes>
         </div>
+        <Footer />
       </div>
     </Router>
 	
