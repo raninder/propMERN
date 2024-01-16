@@ -1,5 +1,5 @@
 import React from 'react';
-import { GoogleMap, useLoadScript, Marker, MarkerF, InfoWindow} from '@react-google-maps/api';
+import { GoogleMap, useLoadScript, MarkerF, InfoWindow} from '@react-google-maps/api';
 // const FaAnchor = require("react-icons/lib/fa/anchor");
 const libraries = ['places'];
 

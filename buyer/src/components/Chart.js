@@ -1,7 +1,7 @@
 
 import React from 'react';
 import 'chartjs-plugin-datalabels';
-import { PieChart, Pie, Legend, Cell,Label,ResponsiveContainer } from 'recharts';
+import { PieChart, Pie, Legend, Cell } from 'recharts';
 import '../styles/chart.css'
 
 const Chart = () => {
@@ -12,7 +12,7 @@ const Chart = () => {
 		{ name: 'School Taxes', amount: 303,color:'brown' }
 	];
 
-const COLORS = ['blueviolet', 'green', 'black', 'brown'];
+// const COLORS = ['blueviolet', 'green', 'black', 'brown'];
 
 	return ( 
 		<div className="piechart">

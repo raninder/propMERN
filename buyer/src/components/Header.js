@@ -2,9 +2,6 @@
 // import pic2 from '../images/pic2.jpeg';
 // import pic3 from '../images/pic3.jpeg';
 import '../styles/header.css'
-import {imagesProp1} from "./Data"
-import Carousel from "./CarouselComp"
-import {useState } from 'react'
 import {useNavigate } from 'react-router-dom'
 
 const Header = ({data}) => {
