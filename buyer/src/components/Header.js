@@ -12,10 +12,6 @@ const Header = ({data}) => {
     // console.log("images....",imagesProp1)
     // e.preventDefault()
     navigate('/images')
-    
-
-   
-
   }
 
 	return ( 
@@ -23,11 +19,12 @@ const Header = ({data}) => {
       <div className='content grid5 mtop'>
           <div className='box' >
             <img className="img1" src={data.cover} alt='' />
-						<img className="img2" src={data.img2} alt='' />
-            <div className="img-container">
-						  <img className="img3" src={data.img3} alt=''/>
-              
-              <button className="img-button" onClick = {handleClick}> See all 36 images </button> 
+            <div className="img-div">
+						  <img className="img2" src={data.img2} alt='' />
+              {/* <div className="img3-container"> */}
+						    <img className="img3" src={data.img3} alt=''/>
+                <button className="img-button" onClick = {handleClick}> See all 36 images </button> 
+              {/* </div> */}
             </div>
           </div>
       </div>

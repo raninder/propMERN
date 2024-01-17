@@ -18,6 +18,7 @@ const Chart = () => {
 		<div className="piechart">
 			<div className="chart">
 			{/* <ResponsiveContainer width="100%" height={220}> */}
+				{/* <PieChart width={250} height={300}> */}
 				<PieChart width={250} height={300}>
 					
 						<Legend 

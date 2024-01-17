@@ -13,8 +13,8 @@ const Overview = ({data}) => {
 					<input type="text" value="Brokerage BHHS EWM Realty" readOnly></input>
 				</div>
 			</div>
-		
-			<p>
+  
+			<p className="overview-content">
 				Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit fuga inventore, deserunt modi mollitia quo vero nulla, distinctio sunt error esse rerum quia incidunt eligendi dolores obcaecati sed optio ducimus.
 			</p>
 			<br/>

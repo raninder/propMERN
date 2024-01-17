@@ -18,15 +18,15 @@
     flex-direction: column;
   }
   .left{
-    margin:10px;
+    /* margin:5px; */
     width: 95%;
   }
   .right{
-    margin:10px;
+    /* margin:5px; */
     width: 95%;
   }
 }
-/* @media only screen and (min-width: 600px){
+@media only screen and (min-width: 600px){
   .left{
     margin:10px;
     width: 60%;
@@ -35,4 +35,4 @@
     margin:10px;
     width: 40%;
   }
-}  */
+} 

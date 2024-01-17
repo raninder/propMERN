@@ -12,7 +12,7 @@ const Navbar = () => {
           </div>
 					<form className="search-form">
             <input  type="search" className="search" placeholder="Search.."/> 
-						<FontAwesomeIcon className="search-icon" icon={faMagnifyingGlass} />
+						{/* <FontAwesomeIcon className="search-icon" icon={faMagnifyingGlass} /> */}
 						</form>
 				</div>
 			</header>

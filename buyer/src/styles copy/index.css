@@ -13,20 +13,20 @@ body {
   font-family: sans-serif;
   padding:10px;
 }
-/* @media only screen and (max-width: 600px){
+@media only screen and (max-width: 600px){
   body{
   width:100%;
-} */
+}
 /* .overview-container, .highlights-container, .details-container, .similar{
   margin-top: 20px;
   background-color: white;
   font-family: sans-serif;
   padding:5px;
 } */
-/* } */
+}
 
 
-/* .chart-container {
+.chart-container {
   margin-bottom: 5rem;
   width: 30%;
   height:30%;
@@ -39,15 +39,11 @@ body {
 .slider{
   width: 100%;
   margin-top:20px;
-} */
+}
 
 
-/* smartphones, portrait iPhone, portrait 480x320 phones (Android)  */
-@media (max-width:600px) {
-  body{
-    width:100%;
-  }
-} 
+
+
 
 
 

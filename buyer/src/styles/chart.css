@@ -1,15 +1,15 @@
 /* chart component */
 .piechart{
   display: flex;
-  /* height:200px; */
 }
 .chart{
-  width:40%;
-  /* text-align:right; */
+  width:50%;
+  padding-left:50px;
+  text-align:right;
 }
 .chartvalue{
-  width:60%;
-  padding-top: 40px;
+  width:50%;
+  padding: 40px;
   text-align: left;
 }
 
@@ -18,34 +18,7 @@
   color:grey;
 }
 
-
-@media only screen and (max-width: 600px){
-  .piechart{
-    display:flex;
-    flex-direction: column;
-  }
-  
-  .chart{
-    width:50%;
-    height: 300px;
-  
-    /* text-align:right; */
-  }
-  .chartvalue{
-    width:20%;
-    padding-top: 30px;
-    /* text-align: left; */
-  }
-  Label{
-    top:10;
-    left:50;
-  }
-} 
-.legend{
-  padding:20px;
-  /* margin:50px; */
-}
-.chart-table{
+/* .chart-table{
   border-collapse: separate;
   border-spacing: 20px;
  
@@ -53,9 +26,8 @@
 .chart-table td{
   padding-right:40px;
   white-space: nowrap;
-}
-@media only screen and (min-width: 600px){
-  .chartvalue{
-    padding-left:30px;
-  }
-}
+}  */
+
+
+
+

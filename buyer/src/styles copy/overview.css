@@ -15,14 +15,9 @@
  .icon1{
   height: 50px;
 }
-
-.overview-content{
-  margin-top:10px;
-}
 hr{
   width:100%;
 }
-
 .score{
   display:flex;
 }
@@ -41,11 +36,5 @@ hr{
 
 
 @media only screen and (max-width: 600px){
-  .walk{
-    margin: 10px;
-  }
-  .walkscore{ 
-    margin-left:10px;
-
-  }
+  
 }

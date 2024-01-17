@@ -1,14 +1,14 @@
 import React from 'react';
+import '../styles/map.css'
 import { GoogleMap, useLoadScript, MarkerF, InfoWindow} from '@react-google-maps/api';
 // const FaAnchor = require("react-icons/lib/fa/anchor");
 const libraries = ['places'];
 
 const mapContainerStyle = {
-  
-  width: '58vw',
+  width: '59vw',
   height: '55vh',
- 
 };
+
 // const center = {
 //   address: '6323 St. Jamestown, Toronto CA',
 //   lat: 43.668163994,
@@ -59,6 +59,7 @@ const Map = () => {
   return (
     <div className="google-map">
       <GoogleMap
+      
         mapContainerStyle={mapContainerStyle}
         zoom={10}
         // center = {center}

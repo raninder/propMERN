@@ -10,10 +10,6 @@ iframe{
 }
 .price-container{
   width:60%;
-  padding:10px;
-}
-.price-icons{
-  margin:5px;
 }
 .map{
   width:40%;
@@ -32,14 +28,3 @@ iframe{
 .price-container span{
   margin-right: 10px;
 }
-
-@media only screen and (max-width: 600px){
-  .price-container{
-    width:45%;
-    padding:10px;
-  }
-  .map{
-    width:45%;
-  }
-
-  }

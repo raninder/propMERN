@@ -1,11 +1,13 @@
+/* .google-map {
+  height: 400px;
+  width: 300px;
+} */
 
-
-.google-map {
+.map-container {
   /* height: 100%;
   width: 100%; */
-	/* height: 50vh;
-  width: 70vw;
-  border:5px solid red; */
+	height: '55vh';
+  width: '58vw';
 }
 
 /* @media only screen and (max-width: 600px){
