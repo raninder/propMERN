@@ -8,7 +8,7 @@ import Similar from "./Similar";
 import Highlights from "./Highlights";
 import Sidebar from "./Sidebar";
 import Details from "./Details";
-import Map from "./Map";
+import Nearby from "./Nearby";
 import '../styles/property.css'
 
 // const Property = ({ id, cover,price,location }) => {
@@ -30,7 +30,7 @@ import '../styles/property.css'
           <Highlights />
           <Details />
           <Similar />
-          <Map />
+          <Nearby />
         </div>
         <div className= "right">
           <Sidebar/>

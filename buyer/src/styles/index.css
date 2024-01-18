@@ -2,52 +2,35 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-size:12px;
 }
 body {
-  font-family: "Poppins", sans-serif;
+  /* font-family: "Poppins", sans-serif; */
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
   background-color: lightgrey;
 }
 .overview-container, .highlights-container, .details-container, .similar{
-  margin-top: 20px;
+  margin-top: 10px;
   background-color: white;
   font-family: sans-serif;
   padding:10px;
 }
-/* @media only screen and (max-width: 600px){
+@media only screen and (max-width: 600px){
   body{
   width:100%;
-} */
-/* .overview-container, .highlights-container, .details-container, .similar{
-  margin-top: 20px;
-  background-color: white;
-  font-family: sans-serif;
-  padding:5px;
-} */
-/* } */
-
-
-/* .chart-container {
-  margin-bottom: 5rem;
-  width: 30%;
-  height:30%;
+}
+.overview-container,.highlights-container, .details-container, .similar{
+  margin-top: 5px;
+  padding:10px;
+}
 }
 
-.slider1{
-  width:100%;
-  margin:20px;
-}
-.slider{
-  width: 100%;
-  margin-top:20px;
-} */
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display:wght@400;700;900&display=swap");
 
 
-/* smartphones, portrait iPhone, portrait 480x320 phones (Android)  */
-@media (max-width:600px) {
-  body{
-    width:100%;
-  }
-} 
+
+
 
 
 

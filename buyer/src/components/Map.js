@@ -1,52 +1,17 @@
-import React from 'react';
-import '../styles/map.css'
-import { GoogleMap, useLoadScript, MarkerF, InfoWindow} from '@react-google-maps/api';
-// const FaAnchor = require("react-icons/lib/fa/anchor");
+import {useState} from 'react';
+import { GoogleMap, useLoadScript, MarkerF, InfoWindow } from '@react-google-maps/api';
 const libraries = ['places'];
 
-const mapContainerStyle = {
-  width: '59vw',
-  height: '55vh',
-};
-
-// const center = {
-//   address: '6323 St. Jamestown, Toronto CA',
-//   lat: 43.668163994,
-//   lng: -79.370331852
-// };
-
-let markers=[
-  {
-      id:1,
-      lat: 43.668163994,
-      lng: -79.370331852,
-      address: '6323 St. Jamestown, Toronto CA',
-      title:'marker 1'
-
-  },
-  {
-      id: 2,
-      lat: 73.668163994,
-      lng: -99.370331852,
-      address: '724 Olive Avenue, Toronto CA',
-      title: 'marker 2'
-
-  },
-  {
-      id: 3,
-      lat: 13.668163994,
-      lng: -49.370331852,
-      address: '724 Olive Avenue, Toronto CA',
-      title: 'marker 3'
-
-  }
-]
 const Map = () => {
   const { isLoaded, loadError } = useLoadScript({
-     googleMapsApiKey: process.env.REACT_APP_API_KEY,
-  
+    googleMapsApiKey: process.env.REACT_APP_API_KEY,
     libraries,
-  });
+    });
+    const [ selected, setSelected ] = useState({});
+  
+  const onSelect = item => {
+    setSelected(item);
+  }
 
   if (loadError) {
     return <div>Error loading maps</div>;
@@ -55,45 +20,74 @@ const Map = () => {
   if (!isLoaded) {
     return <div>Loading maps</div>;
   }
+  
+  const locations = [
+    {
+      name: "Location 1",
+      location: { 
+        lat: 43.668163994,
+        lng: -79.370331852,
+      },
+    },
+    {
+      name: "Location 2",
+      location: { 
+        lat: 43.665,
+        lng: -79.352,
+      },
+    },
+    {
+      name: "Location 3",
+      location: { 
+        lat: 43.66578,
+        lng: -79.3731,
+      },
+    },
+    
+  ];
+  
+	const mapStyles = {        
+    height: "55vh",
+    width: "50vw",
+  };
+	
+  const defaultCenter = {
+    lat: 43.668163994, lng: -79.370331852
+  }
 
   return (
-    <div className="google-map">
-      <GoogleMap
-      
-        mapContainerStyle={mapContainerStyle}
-        zoom={10}
-        // center = {center}
-        center={markers[0]}
-      >
-        {/* <Marker position={center} text={center.address}/> */}
-        <MarkerF position={markers[0]} title={markers[0].shelter} text={markers[0].shelter}>
-            <InfoWindow position={markers[0]}>
-        
-              <div>
-                
-                  {markers[0].address}
-              </div>
-            </InfoWindow>
-        </MarkerF>
-            
-        {/* {
-            //Add a list of Markers to Your Map
-            markers.map( (ele) =>
-              <MarkerF
-              key={ele.id}
-              postion = {ele}
-							// position={{ lat: ele.latitude, lng: ele.longitude }}
-              title={ele.address}
-							text={ele.address}
+      <div className="google-map">
+        <GoogleMap
+          // mapContainerStyle={mapStyles}
+          mapContainerStyle={{width: '100%',height: '55vh'}}
+          zoom={13}
+          center={defaultCenter}>
+          {
+            locations.map(item => {
+              return (
+              <MarkerF key={item.name} 
+              position={item.location} 
+              title={item.name} 
+              onClick={() => onSelect(item)}
               />
-                
 
-            )
-          } */}
-      </GoogleMap>
-    </div>
-    // </div>
-  );
-};
-
+              )
+            })
+          }
+                {  selected.location && 
+                  (
+                    <InfoWindow
+                    position={selected.location}
+                    clickable={true}
+                    onCloseClick={() => setSelected({})}
+                    >
+                    <p>{selected.name}</p>
+                    </InfoWindow>
+                  )
+               }
+          
+     </GoogleMap>
+     </div>
+  )
+}
 export default Map;

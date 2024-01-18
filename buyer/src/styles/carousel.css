@@ -3,8 +3,7 @@
   justify-content: center;
   align-items: center;
   margin-top: 50px;
-  /* margin:auto; */
-  /* height: 20%; */
+  margin-bottom: 150px;
 }
 .carousel{
   max-width: 750px;

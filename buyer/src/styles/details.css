@@ -4,7 +4,6 @@
   flex-direction: row;
   justify-content: space-evenly;
   position:relative;
-  /* margin:10px; */
 }
 .rooms1, .rooms2{
   width:50%;

@@ -2,11 +2,11 @@
   display: flex;
   flex-direction: row;
   font-family:Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 13px;
+  font-size: 12px;
   margin-top:10px;
 }
 .key{
-  margin: 5px;
+  margin: 4px;
 }
 
 .column2, .column4{
@@ -31,6 +31,6 @@
     padding-left:20px;
   }
   .key-icon{
-    margin:4px;
+    margin:3px;
   }
 }
