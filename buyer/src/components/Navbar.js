@@ -1,6 +1,8 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faMagnifyingGlass} from "@fortawesome/free-solid-svg-icons";
+import { faMagnifyingGlass, faBell} from "@fortawesome/free-solid-svg-icons";
 import '../styles/nav.css'
+import { IoIosNotificationsOutline } from "react-icons/io";
+import { Avatar } from '@mui/material';
 
 const Navbar = () => {
 	return ( 
@@ -12,7 +14,11 @@ const Navbar = () => {
           </div>
 					<form className="search-form">
             <input  type="search" className="search" placeholder="Search.."/> 
-						{/* <FontAwesomeIcon className="search-icon" icon={faMagnifyingGlass} /> */}
+						<FontAwesomeIcon className="search-icon" icon={faMagnifyingGlass} />
+						<span className="notif">
+						<FontAwesomeIcon className="bell-icon" icon={faBell} size="2x"/>
+						<Avatar />
+						</span>
 						</form>
 				</div>
 			</header>
