@@ -9,7 +9,7 @@ const Home = () => {
 				{error && <div>{error}</div>}
 			{isPending && <div> Loading... </div> }	
 			
-			{data && <PropertyList properties={data} title={"ALl properties"}/> }
+			{data && <PropertyList properties={data}/> }
 	
     </div>	
 	 );

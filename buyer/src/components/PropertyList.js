@@ -5,8 +5,8 @@ const PropertyList = ({properties,title}) => {
 	console.log("properties",properties)
   
     return (
-        <div>
-          <h1> {title} </h1>
+        <div className="props-main">
+          <h1> All Properties </h1>
           <div className="props-list">
             { properties.map((item) => (
               <div className="preview" key={item.id} >

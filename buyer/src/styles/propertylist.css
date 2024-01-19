@@ -1,4 +1,10 @@
 /* PropertyList component */
+.props-main{
+  margin:20px;
+}
+.props-main h1{
+  margin:10px;
+}
 .props-list {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 2fr));
