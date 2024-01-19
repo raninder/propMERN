@@ -64,7 +64,7 @@ const Footer = () => {
 					</div>  
         </div>
       </div>
-      <img className = "mobile"  src= 'https://www.reso.com.au/static/c0f90c726df9a97816fd4e3573ed6edd/f8d9b/home-agent-dashboard.png' alt='mobile' />
+      {/* <img className = "mobile"  src= 'https://www.reso.com.au/static/c0f90c726df9a97816fd4e3573ed6edd/f8d9b/home-agent-dashboard.png' alt='mobile' /> */}
     </div>
    );
 }
