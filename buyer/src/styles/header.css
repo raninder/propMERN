@@ -1,8 +1,9 @@
 /* Header component */
 .box{
   margin-top:20px;
-  margin-left:20px;
+  margin-left:40px;
   display:flex;
+  position:relative
 }
 .img-div{
   display:flex;
@@ -21,7 +22,22 @@
   border:1px solid green;
   height:100%;
 }
-
+.viewBtn1, .viewBtn2{
+  position:absolute;
+  top:85%;
+  padding:15px;
+  background-color: blueviolet;
+  color:white;
+  border:1px solid blueviolet;
+  border-radius: 20px;
+  font-weight: bold;
+}
+.viewBtn1{
+  left:-3%;
+}
+.viewBtn2{
+  left:10%;
+}
 .img-button{
   position: absolute;
   bottom: 10%;
@@ -34,6 +50,19 @@
   background-color: white;
   color:black;
 }
+.like-icons{
+  display:flex;
+  position: absolute;
+  top: 5%;
+  left: 80%;
+}
+.hicon{
+  margin:3px;
+  padding:3px;
+  background-color: white;
+  border:1px solid grey;
+  border-radius: 50%;
+}
 
 /* phones */
 @media only screen and (max-width: 600px){
@@ -42,6 +71,7 @@
     margin-top:10px;
     display:flex;
     flex-direction: column;
+    position:relative;
   }
 
   img-div{
@@ -61,6 +91,17 @@
     width:48%;
     margin: 10px;
   } 
+  .viewBtn1, .viewBtn2{
+    position:absolute;
+    top:55%;
+  }
+  .viewBtn1{
+    left:3%;
+  }
+
+  .viewBtn2{
+    left:30%;
+  }
 }
 
 

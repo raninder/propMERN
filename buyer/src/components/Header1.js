@@ -21,12 +21,6 @@ const Header = ({data}) => {
       <div className='content grid5 mtop'>
           <div className='box' >
             <img className="img1" src={data.cover} alt='' />
-            <button className="viewBtn1"> 
-            <FontAwesomeIcon icon={faCircle} /> 3D Walkthrough 
-            </button> 
-            <button className="viewBtn2"> 
-            <FontAwesomeIcon icon={faCircle} /> Street View
-            </button> 
             <div className="img-div">
 						  <img className="img2" src={data.img2} alt='' />
               {/* <div className="img3-container"> */}
